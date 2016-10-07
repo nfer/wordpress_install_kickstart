@@ -73,6 +73,7 @@ wget https://wordpress.org/latest.zip
 # install unzip tools and unzip the archive file
 apt-get -y install unzip
 unzip latest.zip
+rm latest.zip
 
 # move wordpress to the http server path
 mv wordpress /var/www/
