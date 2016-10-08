@@ -36,6 +36,9 @@ if [ ! "$PHPTEST_RESULT" = "hello world" ]; then
 fi
 echo "php test pass";
 
+# install php5-curl
+apt-get install -y php5-curl
+
 # install mysql silently
 debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
 debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
