@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # first we MUST update the apt source
-apt-get update 
+apt-get update
 
 # install apache2
 apt-get install -y apache2
@@ -174,3 +174,4 @@ if ( !defined('ABSPATH') )
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
 " >> /var/www/wordpress/wp-config.php
+
