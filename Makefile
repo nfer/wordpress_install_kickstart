@@ -3,4 +3,4 @@ steps = steps/*
 cat = cat
 
 $(prom): $(steps)
-	$(cat) $(steps) > $(prom)
+	$(cat) -s $(steps) > $(prom)
