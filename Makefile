@@ -3,4 +3,5 @@ steps = steps/*
 cat = cat
 
 $(prom): $(steps)
-	$(cat) -s $(steps) > $(prom)
+	rm -f $(prom)
+	for i in $(steps); do $(cat) $$i >> $(prom); echo '' >> $(prom); done

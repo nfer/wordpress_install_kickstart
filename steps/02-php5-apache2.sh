@@ -14,4 +14,3 @@ echo "php test pass";
 
 # install php5-curl
 apt-get install -y php5-curl
-

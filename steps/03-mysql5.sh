@@ -17,4 +17,3 @@ if [ $? -ne 0 ]; then
   exit;
 fi
 echo "mysql user/password pass";
-
